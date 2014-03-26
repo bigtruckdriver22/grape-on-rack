@@ -2,6 +2,7 @@ Grape API on Rack
 =================
 
 Forked from: [Grape](http://github.com/intridea/grape) API mounted on Rack.
+Using PUMA
 
 * [ping](api/ping.rb): a hello world example that returns a JSON document
 * [post_put](api/post_put.rb): a simple `POST` and `PUT` example
@@ -18,7 +19,7 @@ Run
 
 ```
 bundle install
-rackup
+puma
 ```
 
 Try http://localhost:9292/api/ping.
